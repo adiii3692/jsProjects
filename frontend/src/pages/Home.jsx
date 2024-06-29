@@ -19,7 +19,7 @@ const Home = () => {
   //Connect to the backend using axios and get the data
   useEffect(() => {
     axios
-      .get(`http://localhost:${PORT}/books`)
+      .get(`https://jsprojects-omp6.onrender.com/books`)
       .then((response) => {
         setBook(response.data.data);
       })

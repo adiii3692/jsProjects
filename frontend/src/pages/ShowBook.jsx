@@ -10,7 +10,7 @@ const ShowBook = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    axios.get(`http://localhost:${PORT}/books/${id}`)
+    axios.get(`https://jsprojects-omp6.onrender.com/books/${id}`)
     .then((response)=>setBook(response.data))
     .catch((response)=>console.log(response))
   }, []);

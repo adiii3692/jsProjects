@@ -20,7 +20,7 @@ const CreateBook = () => {
       publishYear: publishYear
     };
 
-    axios.post(`http://localhost:${PORT}/books`,data)
+    axios.post(`https://jsprojects-omp6.onrender.com/books`,data)
     .then(()=>navigate('/'))
     .catch(response=>console.log(response))
   };

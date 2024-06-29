@@ -15,7 +15,7 @@ const UpdateBook = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:${PORT}/books/${id}`)
+      .get(`https://jsprojects-omp6.onrender.com/books/${id}`)
       .then((response) => setBook(response.data))
       .catch((response) => console.log(response));
   }, []);
@@ -28,7 +28,7 @@ const UpdateBook = () => {
     };
 
     axios
-      .put(`http://localhost:${PORT}/books/${id}`, data)
+      .put(`https://jsprojects-omp6.onrender.com/books/${id}`, data)
       .then(() => {
         console.log("Book has been updated");
         navigate("/");
